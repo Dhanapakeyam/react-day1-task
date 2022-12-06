@@ -41,15 +41,17 @@ function PricingBoxList() {
 
 function PricingBox({ pricingList }) {
   const styles = {
-    color: "grey"
+    color: "grey",
+
   }
   const priceStyle = {
     fontSize: "40px"
   }
 
   return (
+
     <div className='container'>
-      <Card variant="outlined" style={{ borderRadius: 20 }}>
+      <Card variant="outlined" style={{ width: 400, borderRadius: 20, marginTop: 20, marginLeft: 20 }}>
         <div className='pricing-scheme-container'>
           <p style={styles}>{pricingList.scheme}</p>
           <p style={priceStyle}>{pricingList.price}<sub>/month</sub></p>
